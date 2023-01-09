@@ -23,6 +23,7 @@ The project focuses on lookig at weather trends on the island of Oahu.  This dat
 ### Summary
 The minimum temperatures during the month of December could indicate days of slow buiness.  However, December would still be a great month for ice cream sales with an average temperature of 71 and highs in the 80s.  The difference between the average temperatures between summer and winter is only 4 degrees, suggesting that business would be sustainable year-round.  
 In addition to considering the temperatures during the summer and winter, the precidpitation is another parameter that could be analyzed.  Below are queries that retrieve this data:
+
 june_rain = []
 june_rain = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date)==6).all()
 june_rain_df = pd.DataFrame(june_prcp, columns=['date','Precipitation'])
