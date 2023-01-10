@@ -33,3 +33,5 @@ dec_rain = []
 dec_rain = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date)==12).all()
 dec_rain_df = pd.DataFrame(dec_prcp, columns=['date','Precipitation'])
 dec_rain_df.describe()
+
+<img src="dectemp.png"/>
