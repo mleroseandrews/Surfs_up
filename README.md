@@ -37,3 +37,6 @@ dec_rain_df = pd.DataFrame(dec_prcp, columns=['date','Precipitation'])
 dec_rain_df.describe()
 ```
 <img src="dectemps.png"/>
+<img src="junetemps.png"/>
+<img src="decrain.png"/>
+<img src="junerain.png"/>
